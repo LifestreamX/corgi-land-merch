@@ -1,0 +1,44 @@
+@import './colors';
+@import './buttons';
+
+.main-section {
+  background:  url(../../public/corgianimation.svg);
+  height: 80vh;
+  background-size: contain;
+  background-position: center; /* or 50% 50% */
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+
+  .content {
+    margin: 12rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 400px;
+    left: 500px;
+
+    h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+    }
+
+    button {
+      @include button;
+    }
+
+    button:hover {
+      @include hover;
+    }
+  }
+
+  .bottom-text {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    font-weight: bolder;
+  }
+}
