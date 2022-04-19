@@ -9,7 +9,7 @@ const CreamSection = () => {
   return (
     <section className='section-wrapper'>
       <div className='top-section'>
-        <h1>Corgi Gifts delivered easy!</h1>
+        <h1>Corgi Land Experience Made Easy!</h1>
       </div>
 
       <div className='bottom-section'>
@@ -17,29 +17,27 @@ const CreamSection = () => {
           <div className='gift'>
             <CardGiftcardIcon className='gift-icons' />
           </div>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>We have GiftCards!</p>
         </div>
         <div className='cart'>
           <div className='gift'>
             <AirplanemodeActiveIcon className='gift-icons' />
           </div>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>We have same day shipping!</p>
         </div>
         <div className='cart'>
           <div className='gift'>
             <DirectionsBusIcon className='gift-icons' />
           </div>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            We have shuttle busses to take you directly to our front entrance!
+          </p>
         </div>
         <div className='cart'>
           <div className='gift'>
             <RocketLaunchIcon className='gift-icons' />
           </div>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>We also do delivery by rocketship!</p>
         </div>
       </div>
     </section>

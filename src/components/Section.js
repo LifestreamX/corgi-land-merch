@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../styles/Section.scss';
 
 const Section = () => {
@@ -6,11 +7,13 @@ const Section = () => {
     <div className='main-section'>
       <div className='content'>
         <h1>Be Cozy, with style</h1>
-        <button>Discover</button>
+        <Link to='/about'>
+          <button>Discover</button>
+        </Link>
       </div>
 
-      <div className="bottom-text">
-            <p>20% off of all Corgi hair products</p>
+      <div className='bottom-text'>
+        <p>20% off of all Corgi hair products</p>
       </div>
     </div>
   );

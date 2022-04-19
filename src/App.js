@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/females' element={<Females />} />
-        <Route path='/mens' element={<Mens />} />
+        <Route path='/males' element={<Mens />} />
         <Route path='/giftshop' element={<GiftShop />} />
         <Route path='/about' element={<About />} />
         <Route path='/unisex' element={<Unisex />} />

@@ -42,10 +42,13 @@
         border-radius: 50%;
         background-color: $main-color;
         padding: 20px;
+        margin-bottom: 1rem;
       }
     }
 
     p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
     }
   }
 }

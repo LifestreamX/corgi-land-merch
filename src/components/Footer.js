@@ -11,18 +11,35 @@ const Footer = () => {
       <div className='social-media-wrapper'>
         <h1 className='title'>Social Media</h1>
         <div className='icon-wrapper'>
-          <span>
-            <FacebookIcon className='social-icons' />
-          </span>
-          <span>
-            <InstagramIcon className='social-icons' />
-          </span>
-          <span>
-            <TwitterIcon className='social-icons' />
-          </span>
-          <span>
-            <YouTubeIcon className='social-icons' />
-          </span>
+          <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
+            <span>
+              <FacebookIcon
+                className='social-icons'
+                style={{ color: '#4267B2' }}
+              />
+            </span>
+          </a>
+          <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
+            <span>
+              <InstagramIcon
+                className='social-icons social-ig'
+                style={{ color: 'black' }}
+              />
+            </span>
+          </a>
+          <a href='https://twitter.com/' target='_blank' rel='noreferrer'>
+            <span>
+              <TwitterIcon
+                className='social-icons'
+                style={{ color: '#1DA1F2' }}
+              />
+            </span>
+          </a>
+          <a href='https://www.youtube.com/' target='_blank' rel='noreferrer'>
+            <span>
+              <YouTubeIcon className='social-icons' style={{ color: 'red' }} />
+            </span>
+          </a>
         </div>
       </div>
     </section>

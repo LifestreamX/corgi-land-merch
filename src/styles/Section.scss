@@ -2,13 +2,14 @@
 @import './buttons';
 
 .main-section {
-  background:  url(../../public/corgianimation.svg);
-  height: 80vh;
+  background: url(../../public/corgianimation.svg);
+  height: 85vh;
   background-size: contain;
   background-position: center; /* or 50% 50% */
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+  margin-top: 60px;
 
   .content {
     margin: 12rem;
@@ -23,10 +24,14 @@
     h1 {
       font-size: 4rem;
       text-transform: uppercase;
+      position: relative;
+      top: 2em;
     }
 
     button {
       @include button;
+      position: relative;
+      top: 8rem;
     }
 
     button:hover {

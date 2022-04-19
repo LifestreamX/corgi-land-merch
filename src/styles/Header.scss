@@ -5,13 +5,16 @@
 .header {
   position: sticky;
   top: 0;
+  z-index: 1;
+  border-bottom: 1px solid black;
+
   // margin-top: 10px;
 
   nav {
     @include flex-center;
     justify-content: space-between;
     background-color: whitesmoke;
-    height: 4rem;
+    height: 6rem;
 
     // Left
     .ul-items {
@@ -37,7 +40,7 @@
       @include flex-center;
       font-family: $font-roboto;
       text-transform: uppercase;
-      margin-right: 5rem;
+      margin-right: 20rem;
 
       .corgi-logo {
         margin-right: 1rem;
@@ -48,23 +51,24 @@
     // Right
     .right {
       @include flex-center;
+      margin-right: 1rem;
 
-      .search {
-        @include flex-center;
-        margin-right: 5rem;
+      // .search {
+      //   @include flex-center;
+      //   margin-right: 5rem;
 
-        .search-icon {
-          color: $gray-color;
-          font-size: 1.8rem;
-        }
+      //   .search-icon {
+      //     color: $gray-color;
+      //     font-size: 1.8rem;
+      //   }
 
-        .search-button {
-          background: none;
-          border: none;
-          cursor: pointer;
-          font-size: 1.5rem;
-        }
-      }
+      //   .search-button {
+      //     background: none;
+      //     border: none;
+      //     cursor: pointer;
+      //     font-size: 1.5rem;
+      //   }
+      // }
 
       .login-signup-cart {
         @include flex-center;
@@ -81,13 +85,6 @@
             color: $gray-color;
           }
         }
-      }
-
-      .shopping-cart {
-        margin: 0 3rem;
-        font-size: 2rem;
-        cursor: pointer;
-        color: $basket-color;
       }
     }
   }
