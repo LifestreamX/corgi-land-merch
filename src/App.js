@@ -31,8 +31,3 @@ function App() {
 }
 
 export default App;
-
-// Learn Carousel logic
-// Footer
-// Routing Pages
-// Tidy up website

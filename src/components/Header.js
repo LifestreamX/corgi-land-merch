@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import SearchIcon from '@mui/icons-material/Search';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import '../styles/Header.scss';
 
 const Header = () => {

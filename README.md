@@ -2,6 +2,11 @@
 - React-router-dom
 - SASS
 - Material UI
+- React-hook-form
+
+- yup 
+-  hookform resolvers
+ - react-hook-form-persist
 
 
 # Getting Started with Create React App

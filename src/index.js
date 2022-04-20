@@ -11,3 +11,18 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+
+
+
+
+      //  PAGES
+
+// About
+// Females
+// Giftshop
+// Mens
+// Unisex
+
+
+// Mobile Friendly 
