@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 // import SearchIcon from '@mui/icons-material/Search';
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import '../styles/Header.scss';
@@ -11,13 +11,12 @@ const Header = () => {
         {/* Left section */}
         <ul className='ul-items'>
           <li className='li-items'>
-            <Link to='/females'>Female Corgis</Link>
-            <Link to='/males'>Male Corgis</Link>
-            <Link to='/unisex'>Unisex</Link>
-            <Link to='/giftshop' className='gift-shop'>
+            <NavLink activeClassName="active" to='/females'>Female Corgis</NavLink>
+            <NavLink activeClassName="active" to='/males'>Male Corgis</NavLink>
+            <NavLink activeClassName="active" to='/giftshop' className='gift-shop'>
               Gift Shop
-            </Link>
-            <Link to='/about'>About</Link>
+            </NavLink>
+            <NavLink activeClassName="active" to='/about'>About</NavLink>
           </li>
         </ul>
 
@@ -26,7 +25,7 @@ const Header = () => {
           <Link to='/'>
             <img src='corgi-logo.png' alt='corgi-logo' className='corgi-logo' />
           </Link>
-            <h1>Corgi Land</h1>
+          <h1>Corgi Land</h1>
         </div>
 
         {/* Right section */}
@@ -38,10 +37,10 @@ const Header = () => {
           {/* </div> */}
           <div className='login-signup-cart'>
             <button>
-              <Link to='/login'>Login</Link>
+              <NavLink activeClassName="active" to='/login'>Login</NavLink>
             </button>
             <button>
-              <Link to='/signup'>Sign Up</Link>
+              <NavLink activeClassName="active" to='/signup'>Sign Up</NavLink>
             </button>
           </div>
         </div>

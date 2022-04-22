@@ -18,11 +18,8 @@ root.render(
 
       //  PAGES
 
-// About
 // Females
-// Giftshop
 // Mens
-// Unisex
 
 
 // Mobile Friendly 

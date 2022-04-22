@@ -1,0 +1,129 @@
+@import './colors';
+@import './buttons';
+
+// Styles for giftcard / males / females pages
+
+.product-shop-wrapper {
+  width: 100%;
+  height: 85vh;
+
+  .product-shop-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .product-shop-card {
+      width: 45%;
+      height: 450px;
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+
+      img {
+        width: 100%;
+        height: 70%;
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        h1 {
+          font-size: 2rem;
+          position: relative;
+          top: 2rem;
+        }
+      }
+    }
+  }
+
+ 
+}
+
+// For individual Product
+
+.product-wrapper {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .button {
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    @include button;
+  }
+
+  .button:hover {
+    @include hover;
+  }
+
+  .product-info-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 70vh;
+    padding: 5rem;
+    background-color: $orange-section;
+    border-radius: 20px;
+    position: relative;
+    top: 10rem;
+
+    .title-cost-wrapper {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 3rem;
+
+      .product-title {
+        background-color: $cream-color;
+        font-size: 3rem;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 20px;
+        margin-right: 20rem;
+      }
+
+      .product-cost {
+        background-color: $cream-color;
+        font-size: 3rem;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 20px;
+      }
+    }
+
+    .product-img {
+      img {
+        position: relative;
+
+        height: 30vh;
+      }
+    }
+
+    .product-description {
+      background-color: $cream-color;
+      padding: 2rem;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      margin-top: 3rem;
+    }
+  }
+}

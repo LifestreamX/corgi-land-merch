@@ -1,21 +1,21 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { FemaleCorgis } from '../Data';
+import { MaleCorgis } from '../Data';
 import '../styles/Products.scss';
 
-const Females = () => {
+const Males = () => {
   const { id } = useParams();
 
   // Grabbing specific Item in product list when clicked
   if (id) {
-    const card = FemaleCorgis.find((card) => String(card.id) === String(id));
+    const card = MaleCorgis.find((card) => String(card.id) === String(id));
     if (!card) {
       return <>Item Not Found</>;
     }
 
     return (
       <div className='product-wrapper'>
-        <Link to='/females'>
+        <Link to='/males'>
           {' '}
           <button className='button'>Back to Products</button>
         </Link>
@@ -40,9 +40,9 @@ const Females = () => {
     <div className='product-shop-wrapper'>
       <div className='product-shop-cards'>
         {/* Each card item */}
-        {FemaleCorgis.map((data) => (
+        {MaleCorgis.map((data) => (
           <div className='product-shop-card' key={data.id}>
-            <Link to={`/females/${data.id}`}>
+            <Link to={`/males/${data.id}`}>
               <img src={data.img} alt='' />
               <div className='title'>
                 <h1>{data.title}</h1>
@@ -55,4 +55,4 @@ const Females = () => {
   );
 };
 
-export default Females;
+export default Males;

@@ -1,0 +1,68 @@
+@import './colors';
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .top-section {
+    height: 30vh;
+    width: 100%;
+    color: $main-color;
+    background-color: $orange-section;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: $main-color;
+      position: relative;
+      bottom: 4rem;
+    }
+
+    p {
+      width: 50vw;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+
+    .our-team {
+      position: relative;
+      bottom: 10rem;
+      font-size: 4rem;
+    }
+
+    .member-cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 10rem;
+
+      .member-card {
+        margin: 0 10rem;
+        height: 400px;
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+
+        img {
+          width: 100%;
+        }
+
+        .info-container {
+          box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+          padding-bottom: 1rem;
+
+          h1 {
+            padding: .5rem;
+          }
+        }
+      }
+    }
+  }
+}

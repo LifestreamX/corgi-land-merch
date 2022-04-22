@@ -8,6 +8,10 @@
   z-index: 1;
   border-bottom: 1px solid black;
 
+  .active {
+    border-bottom: 1px solid black;
+  }
+
   // margin-top: 10px;
 
   nav {
@@ -40,7 +44,7 @@
       @include flex-center;
       font-family: $font-roboto;
       text-transform: uppercase;
-      margin-right: 20rem;
+      margin-right: 25rem;
 
       .corgi-logo {
         margin-right: 1rem;
