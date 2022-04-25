@@ -29,7 +29,7 @@ const About = () => {
             </div>
           </div>
           {/* Card 2 */}
-          <div className='member-card'>
+          <div className='member-card' id='wollie'>
             <img src='./corgi-male-2.jpg' alt='' />
             <div className='info-container'>
               <h1>Wollie</h1>

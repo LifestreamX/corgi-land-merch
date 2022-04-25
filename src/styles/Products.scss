@@ -46,8 +46,6 @@
       }
     }
   }
-
- 
 }
 
 // For individual Product
@@ -124,6 +122,27 @@
       border-radius: 20px;
       font-size: 1.5rem;
       margin-top: 3rem;
+    }
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .product-shop-wrapper {
+
+    .product-shop-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+
+@media all and (max-width: 1000px) {
+  .product-shop-wrapper {
+    
+    .product-shop-cards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

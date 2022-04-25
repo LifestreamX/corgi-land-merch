@@ -5,9 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 89vh;
 
   .top-section {
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     color: $main-color;
     background-color: $orange-section;
@@ -17,7 +18,7 @@
     h1 {
       color: $main-color;
       position: relative;
-      bottom: 4rem;
+      bottom: 2rem;
     }
 
     p {
@@ -27,13 +28,18 @@
     }
   }
 
+  // Bottom section under about
+
   .bottom-section {
     display: flex;
     flex-direction: column;
+    height: 40vh;
+    position: relative;
+    top: 2rem;
 
     .our-team {
       position: relative;
-      bottom: 10rem;
+      bottom: 8.5rem;
       font-size: 4rem;
     }
 
@@ -46,22 +52,113 @@
 
       .member-card {
         margin: 0 10rem;
-        height: 400px;
+        // height: 400px;
         width: 400px;
-        box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
 
         img {
           width: 100%;
         }
 
         .info-container {
-          box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
           padding-bottom: 1rem;
 
           h1 {
-            padding: .5rem;
+            padding: 0.5rem;
           }
         }
+      }
+    }
+  }
+}
+
+// Mobile styles
+
+@media all and (max-width: 1200px) {
+  .about-wrapper {
+    .top-section {
+      margin-bottom: 4rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  // Bottom section
+  .bottom-section {
+    position: relative;
+    top: 15rem !important;
+
+    .our-team {
+      margin-top: 40rem;
+      position: relative;
+    }
+
+    .member-cards {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+
+      .member-card {
+        position: relative;
+
+        margin: 20rem;
+      }
+      #wollie {
+        margin-top: 5rem !important;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+// Mobile devices
+
+@media (max-width: 480px) {
+  .about-wrapper {
+    .top-section {
+      margin-bottom: 4rem;
+
+      h1 {
+        font-size: 1.5rem;
+        position: relative;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // Bottom section
+  .bottom-section {
+    position: relative;
+    top: 15rem !important;
+
+    .our-team {
+      margin-top: 30rem;
+      position: relative;
+      font-size: 3rem !important;
+    }
+
+    .member-cards {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+
+      .member-card {
+        position: relative;
+        width: 300px !important;
+      }
+      #wollie {
+        margin-top: 5rem !important;
+        margin-bottom: 5rem;
       }
     }
   }

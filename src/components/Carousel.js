@@ -26,10 +26,7 @@ const Carousel = () => {
           <div className={index === current ? 'carousel active' : 'carousel'}>
             {index === current && (
               <div className='data-item'>
-                {/* <div className='texts'> */}
-                {/* <p className='title'>{slide.title}</p> */}
-                {/* <p>{slide.text}</p> */}
-                {/* </div> */}
+               
                 <img src={slide.image} alt='' />
               </div>
             )}

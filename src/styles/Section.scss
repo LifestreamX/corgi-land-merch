@@ -47,3 +47,57 @@
     font-weight: bolder;
   }
 }
+
+@media all and (max-width: 1730px) {
+  .main-section {
+    .content {
+      top: 400px;
+      left: 400px;
+    }
+  }
+}
+
+@media all and (max-width: 1430px) {
+  .main-section {
+    .content {
+      left: 240px {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1430px) {
+  .main-section {
+    .content {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 950px) {
+  .main-section {
+    .content {
+      left: 220px;
+      h1{
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+
+
+@media all and (max-width: 950px) {
+  .main-section {
+    .content {
+      top:-250px;
+      left: -100px;
+      h1{
+        font-size: 2rem;
+      }
+    }
+  }
+}

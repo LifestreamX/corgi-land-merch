@@ -22,11 +22,11 @@ const SubSection = () => {
             </div>
           </div>
         </Link>
-        <Link to='/unisex'>
+        <Link to='/unisex' >
           <div className='cart'>
-            <img src='/corgi-uni-1.jpg' alt='' />
+            <img src='/corgi-uni-1.jpg' alt='' className='unisex-info'/>
             <div className='text-wrapper'>
-              <h1>Unisex</h1>
+              <h1 className='unisex-info'>Unisex</h1>
             </div>
           </div>
         </Link>

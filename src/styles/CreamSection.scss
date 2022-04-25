@@ -21,6 +21,8 @@
   }
 }
 
+// Bottom section with icons
+
 .bottom-section {
   margin-top: 4rem;
   display: grid;
@@ -50,5 +52,43 @@
       margin-top: 1rem;
       font-size: 1.5rem;
     }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .top-section {
+    h1 {
+      position: relative;
+      top: 20rem;
+    }
+  }
+
+  .bottom-section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    margin-bottom: 35rem;
+  }
+}
+
+
+
+@media all and (max-width: 600px) {
+  .top-section {
+    h1 {
+      position: relative;
+      top: 30rem;
+    }
+  }
+
+  .bottom-section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr ;
+  
+    place-items: center;
+    margin-bottom: 50rem;
   }
 }
