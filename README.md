@@ -13,9 +13,8 @@ Corgi Land
 ## Screenshots
 
 ![](screenshots/home.png)
-![](screenshots/add.png)
-![](screenshots/edit.png)
-![](screenshots/view.png)
+![](screenshots/about.png)
+
 
 ## Technologies
 
