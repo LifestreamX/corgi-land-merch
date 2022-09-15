@@ -5,8 +5,8 @@
 - React-hook-form
 
 - yup 
--  hookform resolvers
- - react-hook-form-persist
+- hookform resolvers
+ -react-hook-form-persist
 
 
 # Getting Started with Create React App

@@ -13,21 +13,42 @@ const Header = () => {
         {/* Left section */}
         <ul className='ul-items'>
           <li className='li-items' id={showLinks ? 'hidden' : ''}>
-            <NavLink activeClassName='active' to='/females'>
+            <NavLink
+              activeClassName='active'
+              to='/females'
+              onClick={() => {
+                setShowLinks(!showLinks);
+              }}
+            >
               Female Corgis
             </NavLink>
-            <NavLink activeClassName='active' to='/males'>
+            <NavLink
+              activeClassName='active'
+              to='/males'
+              onClick={() => {
+                setShowLinks(!showLinks);
+              }}
+            >
               Male Corgis
             </NavLink>
             <NavLink
               activeClassName='active'
               to='/giftshop'
               className='gift-shop'
+              onClick={() => {
+                setShowLinks(!showLinks);
+              }}
             >
               Gift Shop
             </NavLink>
 
-            <NavLink activeClassName='active' to='/about'>
+            <NavLink
+              activeClassName='active'
+              to='/about'
+              onClick={() => {
+                setShowLinks(!showLinks);
+              }}
+            >
               About
             </NavLink>
           </li>

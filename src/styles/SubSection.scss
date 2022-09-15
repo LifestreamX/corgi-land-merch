@@ -92,20 +92,24 @@ section {
   }
 }
 
-@media all and (max-width: 730px) {
+@media all and (max-width: 1000px) {
   section {
     height: 110vh;
     .cart-wrapper {
       // display: grid;
       // grid-template-columns: 200px;
       // place-self: center;
+      h1 {
+        font-size: 1.2rem !important;
+        
+      }
       display: flex;
       flex-direction: column;
 
       .cart {
         img {
-          height: 300px;
-          width: 300px;
+          height: 150px;
+          width: 150px;
         }
 
         h1 {

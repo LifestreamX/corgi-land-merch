@@ -1,7 +1,7 @@
 @import './colors';
 @import './mixins';
 
-.section-wrapper {
+.section-wrapper-cream {
   width: 100%;
   padding-bottom: 10rem;
   background-color: $cream-color;
@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.top-section {
+.top-section-cream {
   @include flex-center;
   justify-content: center;
   margin-bottom: 10rem;
@@ -23,7 +23,7 @@
 
 // Bottom section with icons
 
-.bottom-section {
+.bottom-section-cream {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 200px);
@@ -56,14 +56,14 @@
 }
 
 @media all and (max-width: 1200px) {
-  .top-section {
+  .top-section-cream {
     h1 {
       position: relative;
       top: 20rem;
     }
   }
 
-  .bottom-section {
+  .bottom-section-cream {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
@@ -73,22 +73,50 @@
   }
 }
 
-
-
-@media all and (max-width: 600px) {
-  .top-section {
-    h1 {
-      position: relative;
-      top: 30rem;
-    }
-  }
-
-  .bottom-section {
-    display: grid;
+@media all and (max-width: 1000px) {
+  .section-wrapper-cream {
     height: 100vh;
-    grid-template-columns: 1fr ;
-  
-    place-items: center;
-    margin-bottom: 50rem;
+    position: relative;
+    top: 370px;
+
+    .top-section-cream {
+      padding: 0;
+      margin: 0;
+      top: 0;
+
+      h1 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 0px;
+      }
+    }
+
+    .bottom-section-cream {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .cart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          text-align: center;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .gift-icons {
+      width: 75px !important;
+      height: 75px !important;
+      padding: 20px;
+      margin-bottom: 1rem;
+    }
   }
 }

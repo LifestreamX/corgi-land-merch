@@ -7,12 +7,12 @@ import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 
 const CreamSection = () => {
   return (
-    <section className='section-wrapper'>
-      <div className='top-section'>
+    <section className='section-wrapper-cream'>
+      <div className='top-section-cream'>
         <h1>Corgi Land Experience Made Easy!</h1>
       </div>
 
-      <div className='bottom-section'>
+      <div className='bottom-section-cream'>
         <div className='cart'>
           <div className='gift'>
             <CardGiftcardIcon className='gift-icons' />

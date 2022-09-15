@@ -7,13 +7,16 @@
   align-items: center;
   height: 89vh;
 
-  .top-section {
+  .top-section-about {
     height: 40vh;
     width: 100%;
     color: $main-color;
     background-color: $orange-section;
     display: flex;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1 {
       color: $main-color;
@@ -30,16 +33,18 @@
 
   // Bottom section under about
 
-  .bottom-section {
+  .bottom-section-about {
     display: flex;
     flex-direction: column;
     height: 40vh;
     position: relative;
-    top: 2rem;
+    top: 15rem;
+    justify-content: center;
+    align-items: center;
 
     .our-team {
       position: relative;
-      bottom: 8.5rem;
+      bottom: 13rem;
       font-size: 4rem;
     }
 
@@ -77,7 +82,7 @@
 
 @media all and (max-width: 1200px) {
   .about-wrapper {
-    .top-section {
+    .top-section-about {
       margin-bottom: 4rem;
 
       h1 {
@@ -91,7 +96,7 @@
   }
 
   // Bottom section
-  .bottom-section {
+  .bottom-section-about {
     position: relative;
     top: 15rem !important;
 
@@ -120,31 +125,35 @@
 
 // Mobile devices
 
-@media (max-width: 480px) {
+// Top section
+@media (max-width: 1000px) {
   .about-wrapper {
-    .top-section {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .top-section-about {
       margin-bottom: 4rem;
+      height: 40vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      h1 {
-        font-size: 1.5rem;
-        position: relative;
-      }
+    
 
       p {
         font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+        padding: 30px;
       }
     }
   }
 
   // Bottom section
-  .bottom-section {
-    position: relative;
-    top: 15rem !important;
-
+  .bottom-section-about {
     .our-team {
-      margin-top: 30rem;
-      position: relative;
-      font-size: 3rem !important;
+      font-size: 1.5rem !important;
     }
 
     .member-cards {
@@ -155,7 +164,15 @@
       .member-card {
         position: relative;
         width: 300px !important;
+
+        .info-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
       }
+
       #wollie {
         margin-top: 5rem !important;
         margin-bottom: 5rem;

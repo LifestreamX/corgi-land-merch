@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 
   .arrows {
     cursor: pointer;
@@ -24,6 +25,21 @@
       font-size: 5rem;
       top: 50%;
       right: 1%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel-wrapper {
+    height: 50vh;
+  }
+
+  .arrows {
+    .right-arrow {
+      top: 40% !important;
+    }
+    .left-arrow {
+      top: 40% !important;
     }
   }
 }

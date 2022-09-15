@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='about-wrapper'>
       {/* Top section on what we do */}
-      <div className='top-section'>
+      <div className='top-section-about'>
         <h1>About us</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
@@ -16,7 +16,7 @@ const About = () => {
       </div>
 
       {/* Bottom section showing team */}
-      <div className='bottom-section'>
+      <div className='bottom-section-about'>
         <h2 className='our-team'>Our Team</h2>
 
         <div className='member-cards'>

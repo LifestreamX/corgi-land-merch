@@ -63,40 +63,44 @@
       left: 240px {
         font-size: 2.5rem;
       }
-    }
-  }
-}
-
-@media all and (max-width: 1430px) {
-  .main-section {
-    .content {
       h1 {
         font-size: 2.5rem;
       }
-    }
-  }
-}
 
-@media all and (max-width: 950px) {
-  .main-section {
-    .content {
-      left: 220px;
-      h1{
-        font-size: 2rem;
+      .button-wrapper {
+        top: 300px;
+      }
+    }
+
+    .bottom-text {
+      p {
+        position: relative;
+        top: 1.3rem;
       }
     }
   }
 }
 
-
-
 @media all and (max-width: 950px) {
   .main-section {
+    // margin-bottom: 200px;
     .content {
-      top:-250px;
+      top: -250px;
       left: -100px;
-      h1{
-        font-size: 2rem;
+      h1 {
+        font-size: 1.5rem;
+        position: relative;
+        top: 105px;
+      }
+
+      .button-wrapper {
+        position: relative;
+        bottom: -200px;
+        left: 190px;
+
+        button {
+          padding: 0.6rem;
+        }
       }
     }
   }

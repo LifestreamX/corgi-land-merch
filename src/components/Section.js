@@ -7,7 +7,7 @@ const Section = () => {
     <div className='main-section'>
       <div className='content'>
         <h1>Be Cozy, with style</h1>
-        <Link to='/about'>
+        <Link to='/about' className='button-wrapper'>
           <button>Discover</button>
         </Link>
       </div>
