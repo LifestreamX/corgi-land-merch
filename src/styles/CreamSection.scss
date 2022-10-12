@@ -55,41 +55,21 @@
   }
 }
 
-@media all and (max-width: 1200px) {
-  .top-section-cream {
-    h1 {
-      position: relative;
-      top: 20rem;
-    }
-  }
-
-  .bottom-section-cream {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    place-items: center;
-    margin-bottom: 35rem;
-  }
-}
-
-@media all and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
   .section-wrapper-cream {
-    height: 100vh;
-    position: relative;
-    top: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 
     .top-section-cream {
-      padding: 0;
-      margin: 0;
-      top: 0;
-
+      text-align: center;
+      margin-bottom: -30px;
+      position: relative;
+      top: -120px;
       h1 {
-        font-size: 2rem;
-        width: 100%;
-        text-align: center;
-        position: relative;
-        top: 0px;
+        font-size: 3rem !important;
+        margin-bottom: 60px;
       }
     }
 
@@ -98,25 +78,143 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
+      top: -120px;
 
       .cart {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        margin-top: 30px;
 
+        .gift {
+          .gift-icons {
+            width: 20%;
+            height: 20%;
+          }
+        }
         p {
-          text-align: center;
-          font-size: 1.2rem;
+          font-size: 2rem !important;
         }
       }
     }
+  }
+}
 
-    .gift-icons {
-      width: 75px !important;
-      height: 75px !important;
-      padding: 20px;
-      margin-bottom: 1rem;
+@media screen and (max-width: 768px) {
+  .section-wrapper-cream {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    .top-section-cream {
+      text-align: center;
+      margin-bottom: -30px;
+      position: relative;
+      top: -120px;
+      h1 {
+        font-size: 1.7rem !important;
+        margin-bottom: 20px;
+      }
+    }
+
+    .bottom-section-cream {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: -120px;
+
+      .cart {
+        width: 100%;
+
+        .gift {
+          .gift-icons {
+            width: 20%;
+            height: 20%;
+          }
+        }
+        p {
+          font-size: 1.3rem !important;
+        }
+      }
     }
   }
 }
+
+// @media all and (max-width: 1025px) {
+//   .section-wrapper-cream {
+//     height: 100vh;
+//     position: relative;
+//     top: 40px;
+
+//     .top-section-cream {
+//       padding: 0;
+//       margin: 0;
+//       top: 0;
+
+//       h1 {
+//         font-size: 2.5rem;
+//         width: 100%;
+//         text-align: center;
+//         position: relative;
+//       }
+//     }
+
+//     .bottom-section-cream {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+
+//       .cart {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         margin-top: 30px;
+
+//         p {
+//           text-align: center;
+//           font-size: 1.5rem;
+//         }
+//       }
+//     }
+
+//     .gift-icons {
+//       width: 100px !important;
+//       height: 100px !important;
+//       padding: 20px;
+//       margin-bottom: 1rem;
+//     }
+//   }
+// }
+
+// @media all and (max-width: 767px) {
+//   .section-wrapper-cream {
+//     top: 230px;
+
+//     .top-section-cream {
+//       h1 {
+//         font-size: 1.3rem;
+//       }
+//     }
+
+//     .bottom-section-cream {
+//       .cart {
+//         p {
+//           text-align: center;
+//           font-size: 1.2rem;
+//           margin-top: 0px;
+//         }
+//       }
+//     }
+
+//     .gift-icons {
+//       width: 60px !important;
+//       height: 60px !important;
+//       padding: 20px;
+//       margin-bottom: 1rem;
+//     }
+//   }
+// }

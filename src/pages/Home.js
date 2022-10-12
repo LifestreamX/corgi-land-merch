@@ -7,7 +7,7 @@ import SubSection from '../components/SubSection';
 
 const Home = () => {
   return (
-    <div>
+    <div >
       <Section />
       <SubSection />
       <CreamSection />
