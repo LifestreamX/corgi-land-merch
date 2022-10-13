@@ -7,6 +7,7 @@
   top: 0;
   z-index: 1;
   border-bottom: 1px solid black;
+  z-index: 99;
 
   .active {
     border-bottom: 1px solid black;
@@ -20,10 +21,12 @@
     background-color: whitesmoke;
     height: 6rem;
 
+
     // Left
     .ul-items {
       list-style: none;
       margin-left: 1rem;
+
 
       .li-items {
         a {
@@ -116,12 +119,12 @@
 
 // Responsive styling
 
-
 @media all and (max-width: 835px) {
   .mobile-button-wrapper button {
     display: flex !important;
     border: none;
     margin-left: 2rem;
+    z-index: 999;
 
     .burger {
       height: 3rem;
@@ -133,13 +136,13 @@
     }
   }
 
- ul{
-   li{
-     a{
-       display: none;
-     }
-   }
- }
+  ul {
+    li {
+      a {
+        display: none;
+      }
+    }
+  }
 
   .logo {
     h1 {
@@ -167,9 +170,8 @@
         flex-direction: column;
         align-items: center;
         display: flex;
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-        transition-duration: .25s;
-
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        transition-duration: 0.25s;
 
         a {
           color: black !important;
@@ -178,8 +180,6 @@
           font-size: 2rem !important;
         }
       }
-
-    
     }
   }
 }

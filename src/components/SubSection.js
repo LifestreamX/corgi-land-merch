@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const SubSection = () => {
   return (
-    <section>
+    <section className='section'>
       <div className='cart-wrapper'>
         <Link to='/males'>
           <div className='cart'>

@@ -44,7 +44,7 @@
 
     .our-team {
       position: relative;
-      bottom: 13rem;
+      bottom: 10rem;
       font-size: 4rem;
     }
 
@@ -125,8 +125,8 @@
 
 // Mobile devices
 
-// Top section
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
+  // Top section
   .about-wrapper {
     width: 100%;
     overflow-y: auto;
@@ -139,43 +139,88 @@
       justify-content: center;
       align-items: center;
 
-    
+      h1 {
+        font-size: 3rem !important;
+      }
 
       p {
-        font-size: 0.9rem;
+        font-size: 1.6rem;
         width: 100%;
         text-align: center;
         padding: 30px;
       }
     }
-  }
 
-  // Bottom section
-  .bottom-section-about {
-    .our-team {
-      font-size: 1.5rem !important;
-    }
-
-    .member-cards {
-      display: flex;
-      flex-direction: column;
-      margin-top: 2rem;
-
-      .member-card {
-        position: relative;
-        width: 300px !important;
-
-        .info-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+    // Bottom section
+    .bottom-section-about {
+      margin-top: 120px;
+      .our-team {
+        font-size: 3rem !important;
       }
 
-      #wollie {
-        margin-top: 5rem !important;
-        margin-bottom: 5rem;
+      .member-cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        .member-card {
+          position: relative;
+          width: 500px !important;
+
+          .info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        #wollie {
+          margin-top: 5rem !important;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  // Top section
+  .about-wrapper {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .top-section-about {
+      margin-bottom: 4rem;
+      height: 80vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+
+      h1 {
+        font-size: 2rem !important;
+        margin-top: 130px;
+      }
+
+      p {
+        margin-top: -20px;
+        font-size: 1rem;
+      }
+    }
+
+    // Bottom section
+    .bottom-section-about {
+      margin-top: -10px;
+      .our-team {
+        font-size: 2.7rem !important;
+      }
+
+      .member-cards {
+        .member-card {
+          width: 300px !important;
+        }
       }
     }
   }
