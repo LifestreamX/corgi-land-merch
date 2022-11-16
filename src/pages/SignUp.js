@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/SignUp.scss';
+import '../styles/Signup.scss';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 
 
-const SignUp = () => {
+const Signup = () => {
   // Yup Schema
   const formSchema = Yup.object().shape({
     username: Yup.string()
@@ -85,4 +85,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup;

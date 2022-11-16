@@ -7,7 +7,7 @@ import Females from './pages/Females';
 import GiftShop from './pages/GiftShop';
 import Males from './pages/Males';
 import Login from './pages/Login';
-import SignUp from './pages/SignUp';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
 
         <Route path='/about' element={<About />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<SignUp />} />
+        <Route path='/signup' element={<Signup />} />
       </Routes>
     </div>
   );
