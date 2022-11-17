@@ -4,7 +4,7 @@ Corgi Land
  
 
 
- Access my site at https://corgiland.tyler-allen.com/
+ Access my site at https://corgiland.tyler-allen.com
 
 ## About The App
 
