@@ -105,8 +105,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    height: 130vh;
-    
+    height: 140vh;
 
     .top-section-cream {
       text-align: center;
@@ -141,6 +140,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section-wrapper-cream {
+    height: 180vh;
   }
 }
 
