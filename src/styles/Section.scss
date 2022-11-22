@@ -97,3 +97,20 @@
     }
   }
 }
+
+@media screen and (max-width: 380px) {
+  .main-section {
+    .content {
+      h1 {
+        font-size: 1.5rem !important;
+      }
+    }
+
+    .button-wrapper {
+      button {
+        right: 80px !important;
+        top: 50px !important;
+      }
+    }
+  }
+}
