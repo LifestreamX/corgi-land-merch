@@ -56,20 +56,18 @@
 // For individual Product --------------------------
 
 .product-wrapper {
-  width: 100%;
-  height: 60vh;
+  // height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: sc;
 
   .button {
-    position: absolute;
-    top: 2rem;
-    left: 5rem;
     z-index: 3;
     @include button;
+    margin-bottom: 50px;
   }
 
   .button:hover {
@@ -78,49 +76,50 @@
 
   .product-info-wrapper {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: $orange-section;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
-    height: 70vh;
+    width: 600px;
     padding: 5rem;
-    background-color: $orange-section;
-    border-radius: 20px;
-    position: relative;
-    top: 10rem;
+    object-fit: contain;
 
     .title-cost-wrapper {
       display: flex;
-      justify-content: space-between;
       position: relative;
-      bottom: 3rem;
+      margin-bottom: 20px;
 
       .product-title {
         background-color: $cream-color;
-        font-size: 3rem;
+        font-size: 1.5rem;
         text-align: center;
         padding: 1rem;
         border-radius: 20px;
-        margin-right: 20rem;
+        margin-right: 10px;
       }
 
       .product-cost {
         background-color: $cream-color;
-        font-size: 3rem;
+        font-size: 1.5rem;
         text-align: center;
         padding: 1rem;
         border-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 10px;
       }
     }
 
     .product-img {
+      display: flex;
+      justify-content: center;
       img {
         position: relative;
-        height: 30vh;
+        width: 300px;
+        object-fit: contain;
       }
     }
 
@@ -134,7 +133,82 @@
   }
 }
 
-// Styles
+@media screen and (max-width: 768px) {
+  .product-wrapper {
+    .button {
+    }
+
+    .button:hover {
+      @include hover;
+    }
+
+    .product-info-wrapper {
+      width: 90%;
+
+      .title-cost-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .product-img {
+        img {
+          width: 200px;
+        }
+      }
+
+      .product-description {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-wrapper {
+    .button {
+    }
+
+    .button:hover {
+      @include hover;
+    }
+
+    .product-info-wrapper {
+      width: 90%;
+
+      .title-cost-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .product-title {
+          font-size: 1rem;
+          margin-right: 10px;
+        }
+
+        .product-cost {
+          font-size: 1rem;
+
+          margin-left: 10px;
+        }
+      }
+
+      .product-img {
+        img {
+          width: 150px;
+        }
+      }
+
+      .product-description {
+        font-size: 0.8rem;
+        min-width: 150%;
+      }
+    }
+  }
+}
+
+// // Styles
 
 @media all and (max-width: 1400px) {
   .product-shop-wrapper {
@@ -167,91 +241,81 @@
   }
 }
 
-// Individual product styles
-@media screen and (max-width: 1025px) {
-  .product-wrapper {
-    .button {
-      position: absolute;
-      top: 0;
-      left: 5rem;
-      @include button;
-    }
+// // Individual product styles
+// @media screen and (max-width: 1025px) {
+//   .product-wrapper {
+//     top: 50px;
+//     .button {
+//       @include button;
+//     }
 
-    .product-info-wrapper {
-      width: 90%;
-      margin-top: 5rem;
+//     .product-info-wrapper {
+//       width: 90%;
 
-      .title-cost-wrapper {
-        .product-title {
-          font-size: 2rem;
-          margin-top: 10rem;
-        }
+//       .title-cost-wrapper {
+//         .product-title {
+//           font-size: 1.6rem;
+//           margin-top: 10rem;
+//         }
 
-        .product-cost {
-          font-size: 2rem;
-          margin-top: 10rem;
-        }
-      }
+//         .product-cost {
+//           font-size: 1.6rem;
+//           margin-top: 10rem;
+//         }
+//       }
 
-      .product-description {
-        font-size: 1.2rem;
-        margin-bottom: 7rem;
-      }
-    }
-  }
-}
+//       .product-description {
+//         font-size: 1.2rem;
+//         margin-bottom: 7rem;
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-width: 767px) {
-  .product-wrapper {
-    height: 100%;
+// @media screen and (max-width: 480px) {
+//   .product-wrapper {
+//     top: 200px;
+//     display: flex;
 
-    .button {
-      position: absolute;
-      top: 0;
-      left: 5px;
-      font-size: 1rem !important;
-      @include button;
-      text-align: center;
-    }
+//     .button {
+//       font-size: 1rem !important;
+//       @include button;
+//     }
 
-    .product-info-wrapper {
-      width: 90%;
-      height: 80%;
-      position: absolute !important;
-      top: 0 !important;
-      margin-top: 100px !important;
+//     .product-info-wrapper {
+//       width: 90%;
 
-      .title-cost-wrapper {
-        .product-title {
-          font-size: 1rem;
-          position: relative;
-          left: 120px;
-          top: 25px;
-        }
+//       .title-cost-wrapper {
+//         .product-title {
+//           font-size: 1rem;
+//           position: relative;
+//           left: 120px;
+//           top: 25px;
+//         }
 
-        .product-cost {
-          font-size: 1rem;
-          position: relative;
+//         .product-cost {
+//           font-size: 1rem;
+//           position: relative;
 
-          right: 120px;
-          top: 25px;
-        }
-      }
+//           right: 120px;
+//           top: 25px;
+//         }
+//       }
 
-      .product-description {
-        font-size: 0.9rem;
-        margin-bottom: 7rem;
-        width: 80vw;
-        padding: 1rem;
-      }
+//       .product-description {
+//         font-size: 0.9rem;
+//         margin-bottom: 7rem;
+//         width: 80vw;
+//         padding: 1rem;
+//       }
 
-      .product-img {
-        object-fit: contain;
+//       .product-img {
+//         object-fit: contain;
 
-        img {
-          height: 20vh;
-        }
-      }
-    }
-  }
-}
+//         img {
+//           height: 20vh;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -17,8 +17,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: 400px;
-    left: 500px;
+    bottom: 200px;
 
     h1 {
       font-size: 4rem;
@@ -50,10 +49,6 @@
 @media all and (max-width: 1025px) {
   .main-section {
     .content {
-      position: absolute;
-      top: -250px;
-      left: -150px;
-
       h1 {
         font-size: 2.4rem;
       }
@@ -72,8 +67,6 @@
   .main-section {
     // margin-bottom: 200px;
     .content {
-      top: -250px;
-      left: -100px;
       h1 {
         font-size: 2rem !important;
         position: relative;
@@ -82,33 +75,31 @@
 
       .button-wrapper {
         position: relative;
-        bottom: -220px;
-        left: 180px;
 
         button {
           padding: 0.7rem;
-          position: relative;
-          top: 70px;
           font-size: 1rem;
-          right: 40px;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .main-section {
     .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       h1 {
         font-size: 1.5rem !important;
+        min-width: 200px;
       }
     }
 
     .button-wrapper {
       button {
-        right: 80px !important;
-        top: 50px !important;
       }
     }
   }

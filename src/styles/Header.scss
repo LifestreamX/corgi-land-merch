@@ -21,12 +21,10 @@
     background-color: whitesmoke;
     height: 6rem;
 
-
     // Left
     .ul-items {
       list-style: none;
       margin-left: 1rem;
-
 
       .li-items {
         a {
@@ -43,9 +41,11 @@
     }
 
     // Hamburger Menu Button
+
     .mobile-button-wrapper button {
       display: none;
       background-color: whitesmoke;
+      
     }
 
     nav ul #hidden {
