@@ -3,13 +3,12 @@
 
 .main-section {
   background: url(../../public/corgianimation.svg);
-  height: 85vh;
+  height: 1200px;
   background-size: contain;
   background-position: center; /* or 50% 50% */
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
-  margin-top: 60px;
 
   .content {
     margin: 12rem;

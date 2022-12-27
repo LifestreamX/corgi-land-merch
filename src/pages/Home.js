@@ -7,13 +7,13 @@ import SubSection from '../components/SubSection';
 
 const Home = () => {
   return (
-    < >
+    <div>
       <Section />
       <SubSection />
       <CreamSection />
       <Carousel />
       <Footer />
-    </>
+    </div>
   );
 };
 

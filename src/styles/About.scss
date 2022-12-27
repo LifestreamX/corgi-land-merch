@@ -3,18 +3,14 @@
 .about-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 89vh;
 
   .top-section-about {
-    height: 40vh;
+    height: 500px;
     width: 100%;
     color: $main-color;
     background-color: $orange-section;
     display: flex;
     flex-direction: column;
-    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -25,9 +21,9 @@
     }
 
     p {
-      width: 50vw;
       font-size: 1.5rem;
       line-height: 2rem;
+      max-width: 50%;
     }
   }
 
@@ -36,7 +32,7 @@
   .bottom-section-about {
     display: flex;
     flex-direction: column;
-    height: 40vh;
+
     position: relative;
     top: 15rem;
     justify-content: center;
@@ -46,6 +42,7 @@
       position: relative;
       bottom: 10rem;
       font-size: 4rem;
+      margin-bottom: 60px;
     }
 
     .member-cards {
@@ -56,7 +53,7 @@
       bottom: 10rem;
 
       .member-card {
-        margin: 0 10rem;
+        margin: 0 5rem;
         width: 400px;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
 
@@ -78,106 +75,51 @@
   }
 }
 
-// Mobile styles
-
-@media all and (max-width: 1200px) {
-  .about-wrapper {
-    .top-section-about {
-      margin-bottom: 4rem;
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      p {
-        font-size: 1.1rem;
-      }
-    }
-  }
-
-  // Bottom section
-  .bottom-section-about {
-    position: relative;
-    top: 15rem !important;
-
-    .our-team {
-      margin-top: 40rem;
-      position: relative;
-    }
-
-    .member-cards {
-      display: flex;
-      flex-direction: column;
-      margin-top: 2rem;
-
-      .member-card {
-        position: relative;
-
-        margin: 20rem;
-      }
-      #wollie {
-        margin-top: 5rem !important;
-        margin-bottom: 5rem;
-      }
-    }
+@media screen and (max-width: 1025px) {
+  .member-card {
+    width: 300px !important;
   }
 }
 
 // Mobile devices
 
-@media (max-width: 1025px) {
+@media (max-width: 768px) {
   // Top section
   .about-wrapper {
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
     .top-section-about {
-      margin-bottom: 4rem;
-      height: 40vh;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
       h1 {
-        font-size: 3rem !important;
       }
 
       p {
-        font-size: 1.6rem;
-        width: 100%;
-        text-align: center;
-        padding: 30px;
+        font-size: 1.2rem;
       }
     }
 
     // Bottom section
     .bottom-section-about {
-      margin-top: 120px;
       .our-team {
         font-size: 3rem !important;
       }
 
       .member-cards {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-
+        margin-left: 50px;
+        margin-right: 50px;
         .member-card {
-          position: relative;
-          width: 500px !important;
+          margin: 2rem !important;
+
+          width: 200px !important;
 
           .info-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
           }
         }
 
         #wollie {
-          margin-top: 5rem !important;
-          margin-bottom: 5rem;
+          // margin-top: 5rem !important;
+          // margin-bottom: 5rem;
         }
       }
     }
@@ -187,39 +129,36 @@
 @media (max-width: 480px) {
   // Top section
   .about-wrapper {
-    width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
     .top-section-about {
-      margin-bottom: 4rem;
-      height: 80vh;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2rem;
-
       h1 {
-        font-size: 2rem !important;
-        margin-top: 130px;
+        font-size: 1.6rem !important;
       }
 
       p {
-        margin-top: -20px;
         font-size: 1rem;
+        text-align: center;
       }
     }
 
     // Bottom section
     .bottom-section-about {
-      margin-top: -10px;
       .our-team {
-        font-size: 2.7rem !important;
+        font-size: 2rem !important;
       }
 
       .member-cards {
+        display: flex;
+        flex-direction: column;
         .member-card {
-          width: 300px !important;
+          width: 100% !important;
+
+          h1 {
+            font-size: 1rem;
+          }
+
+          h2 {
+            font-size: 1rem;
+          }
         }
       }
     }

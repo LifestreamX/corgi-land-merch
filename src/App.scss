@@ -15,3 +15,8 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+}
