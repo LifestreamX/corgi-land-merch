@@ -10,7 +10,9 @@ const SubSection = () => {
           <div className='cart'>
             <img src='./corgi-male-2.jpg' alt='' />
             <div className='text-wrapper'>
-              <h1>Shop for male corgis</h1>
+              <h1 className={{ textTransform: 'uppercase' }}>
+                Shop for Male Corgis
+              </h1>
             </div>
           </div>
         </Link>
@@ -18,13 +20,13 @@ const SubSection = () => {
           <div className='cart'>
             <img src='/corgi-female-2.jpg' alt='' />
             <div className='text-wrapper'>
-              <h1>Shop for female Corgis</h1>
+              <h1>Shop for Female Corgis</h1>
             </div>
           </div>
         </Link>
-        <Link to='/unisex' >
+        <Link to='/unisex'>
           <div className='cart'>
-            <img src='/corgi-uni-1.jpg' alt='' className='unisex-info'/>
+            <img src='/corgi-uni-1.jpg' alt='' className='unisex-info' />
             <div className='text-wrapper'>
               <h1 className='unisex-info'>Unisex</h1>
             </div>
